@@ -1,0 +1,55 @@
+name: Feature request
+description: Suggest an improvement or new feature for Polygon Studio.
+title: "[Feature] "
+labels: ["enhancement"]
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the frustration or limitation you encountered.
+      placeholder: |
+        Example:
+        Creating smooth curves currently requires many vertices.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the feature or behavior you would like to see.
+      placeholder: |
+        Example:
+        Add smooth vertices with handles to create curves.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. Did you consider another workflow or workaround?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android app
+        - PWA
+        - Desktop browser
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, mockups, examples, or anything else that helps explain the idea.
+    validations:
+      required: false
