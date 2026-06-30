@@ -1,0 +1,31 @@
+name: Crash report
+description: Report a Polygon Studio crash
+title: "[Crash] "
+labels: ["bug", "crash"]
+body:
+  - type: textarea
+    id: crash-report
+    attributes:
+      label: Crash report
+      description: Paste the report copied from Polygon Studio.
+      placeholder: |
+        App version:
+        Browser:
+        OS:
+        Tool:
+        Error:
+        Stack:
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What were you doing?
+      description: Optional, but helpful.
+      placeholder: |
+        1. Opened the app
+        2. Selected Transform tool
+        3. Tapped...
+    validations:
+      required: false
